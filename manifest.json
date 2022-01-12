@@ -1,0 +1,16 @@
+{
+
+"manifest_version": 2,
+"name": "Blue Cursor for Docs",
+"version": "1.0",
+"description": "Changes Google Docs cursor color to Google Blue",
+"permissions": ["tabs", "*://docs.google.com/document/*"],
+"content_scripts":
+[{
+"js":["content.js"],
+"matches": ["*://docs.google.com/document/*"],
+"run_at": "document_end"
+
+}]
+
+}
