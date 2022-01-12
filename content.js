@@ -5,11 +5,9 @@ var observer = new MutationObserver(function(mutations) {
         if (cursor.style.borderColor !== "rgb(76,139,245)")  {
           cursor.style.borderColor = "rgb(76,139,245)";
         }
-        
         else {
           console.log("Border color not changed");
         }
-        
     });
 });
  
