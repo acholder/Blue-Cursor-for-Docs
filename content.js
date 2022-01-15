@@ -26,8 +26,8 @@ var observer = new MutationObserver(function(mutations) {
   
 });
 observer.observe(docsMode, {
-  attributes:true,
-  attributeFilter: ['data-tooltip']
+attributes:true,
+attributeFilter: ['data-tooltip']
 });
 
 }
@@ -44,10 +44,8 @@ var observer = new MutationObserver(function(mutations) {
 });
 
 observer.observe(cursor, {
-  attributes:true
+attributes:true
 });
-  
-//cursor.style.borderColor = gBlue;
 
 }
 
