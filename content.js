@@ -24,6 +24,7 @@ var observer = new MutationObserver(function(mutations) {
     });
   
   });
+  
 observer.observe(docsMode, {
   attributes:true,
   attributeFilter: ['data-tooltip']
