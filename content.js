@@ -1,19 +1,18 @@
-
-
 window.onload = getMode;
 
 function cursorColor(){
-  
+
 var cursor = document.getElementById("kix-current-user-cursor-caret");
 var gBlue = "rgb(66, 133, 244)";
 var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
-    
-    if (cursor.style.borderColor !== gBlue) {
       
+    if (cursor.style.borderColor !== gBlue) {
+     
       console.log("color reverted to " + cursor.style.borderColor + ".");
       cursor.style.borderColor = gBlue;
       console.log("Updated to " + gBlue + ".");
+    
     }
     
     });
@@ -30,7 +29,6 @@ observer.observe(cursor, {
 cursor.style.borderColor = gBlue;
 
 }
-
 
 function getMode() {
   
